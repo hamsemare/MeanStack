@@ -36,8 +36,6 @@ app.use(cors());
 //Set static folder to public
 app.use(express.static(path.join(__dirname, "public")));
 
-
-
 //Passport middleware
 app.use(passport.initialize());
 app.use(passport.session());
@@ -49,12 +47,12 @@ app.use("/users", users);
 
 //Index Route
 app.get("/", function(req, res){
-	res.send("welcome");
+})
+
+app.get("*", function(req, res){
+	res.sendFile(path.join(__dirname, "public/index.html"))
 })
 
 //Start Server
 app.listen(port, function(){
-	console.log("Hello ");
 })
-
-
