@@ -1,5 +1,4 @@
 # MeanStack
-# **Welcome to the MEAN-Stack wiki!**
 ***
 
 Created a functional MEAN Web Application. 
