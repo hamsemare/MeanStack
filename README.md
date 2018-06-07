@@ -1,4 +1,4 @@
-# MeanStack
+# MEANStack
 ***
 
 Created a functional MEAN Web Application. 
